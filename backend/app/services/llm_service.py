@@ -21,6 +21,7 @@ class LLMResult:
 
 def _build_prompt(inp: PatientInput, severity: str) -> str:
     comorbidities = []
+    if inp.pregnant:           comorbidities.append("pregnancy (increases COVID-19 severity risk)")
     if inp.diabetes:           comorbidities.append("diabetes")
     if inp.copd:               comorbidities.append("COPD")
     if inp.asthma:             comorbidities.append("asthma")
@@ -158,6 +159,7 @@ class LLMService:
 
     def _rule_based_fallback(self, inp: PatientInput, severity: str) -> LLMResult:
         comorbidities = []
+        if inp.pregnant:          comorbidities.append("pregnancy")
         if inp.diabetes:          comorbidities.append("diabetes")
         if inp.hypertension:      comorbidities.append("hypertension")
         if inp.cardiovascular:    comorbidities.append("cardiovascular disease")
