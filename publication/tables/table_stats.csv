@@ -1,0 +1,10 @@
+Metric,Mexican,Einstein,Ensemble
+Overall Accuracy,51.6%,85.1%,86.0%
+95% CI (Bootstrap),"[50.6%, 52.6%]","[76.7%, 90.0%]","[83.4%, 85.0%]"
+Cohen's Kappa,0.386,0.555,0.798
+Severe Recall,31.0%,33.3%,—
+Critical Recall,60.3%,N/A,—
+Training Samples,"42,904",602,—
+Features Used,17,11,28
+Dataset Country,Mexico,Brazil,Multi-national
+McNemar p (vs Ens.),p=0.0000,—,ref

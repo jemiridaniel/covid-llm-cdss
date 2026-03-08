@@ -1,0 +1,4 @@
+Model,Overall_Acc,Severe_Recall,Critical_Recall,Dataset
+Mexican (comorbidity),51.6,30.98,60.3,Mexican
+Einstein (lab),85.12,33.33,,Einstein
+Ensemble,85.95,0.0,,Einstein (mapped)

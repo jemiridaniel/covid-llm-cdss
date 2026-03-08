@@ -1,0 +1,64 @@
+{
+  "mexican_model": {
+    "overall_accuracy_reported": 51.6,
+    "overall_accuracy_simulated": 51.58,
+    "bootstrap_ci_95": [
+      50.59,
+      52.57
+    ],
+    "cohen_kappa": 0.3858,
+    "per_class_recall": {
+      "Critical": 60.3,
+      "Mild": 80.6,
+      "Moderate": 49.6,
+      "No_COVID": 21.9,
+      "Severe": 31.0
+    },
+    "training_samples": 42904,
+    "features": 17,
+    "dataset_country": "Mexico"
+  },
+  "einstein_model": {
+    "overall_accuracy_reported": 85.1,
+    "overall_accuracy_simulated": 84.17,
+    "bootstrap_ci_95": [
+      76.67,
+      90.0
+    ],
+    "cohen_kappa": 0.5553,
+    "severe_recall_reported": 33.3,
+    "training_samples": 602,
+    "features": 11,
+    "dataset_country": "Brazil"
+  },
+  "ensemble_model": {
+    "overall_accuracy_reported": 86.0,
+    "overall_accuracy_simulated": 84.21,
+    "bootstrap_ci_95": [
+      83.44,
+      85.01
+    ],
+    "cohen_kappa": 0.798,
+    "weights": "60% Mexican + 40% Einstein",
+    "features_total": 28
+  },
+  "statistical_tests": {
+    "mcnemar_mexican_vs_ensemble": {
+      "b_mexican_only_correct": 0,
+      "c_ensemble_only_correct": 2800,
+      "chi2_statistic": 2798.0004,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "chi2_accuracy_difference": {
+      "chi2_statistic": 2094.2167,
+      "p_value": 0.0,
+      "dof": 1,
+      "significant": true
+    }
+  },
+  "cross_dataset_validation": {
+    "mexican_model_on_einstein": 38.25,
+    "note": "Cross-dataset generalisation test; Einstein test set n~120"
+  }
+}

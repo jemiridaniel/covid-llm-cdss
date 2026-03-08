@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #0284C7;
+  --primary-dark: #0369A1;
+  --primary-light: #E0F2FE;
+  --bg: #F0F9FF;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --text-muted: #64748B;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+
+  /* Severity — COVID-19 stages */
+  --no-covid: #16A34A;
+  --no-covid-bg: #F0FDF4;
+  --no-covid-border: #BBF7D0;
+  --mild: #D97706;
+  --mild-bg: #FFFBEB;
+  --mild-border: #FDE68A;
+  --moderate: #EA580C;
+  --moderate-bg: #FFF7ED;
+  --moderate-border: #FED7AA;
+  --severe: #DC2626;
+  --severe-bg: #FEF2F2;
+  --severe-border: #FECACA;
+  --critical: #7F1D1D;
+  --critical-bg: #FEF2F2;
+  --critical-border: #FECACA;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}

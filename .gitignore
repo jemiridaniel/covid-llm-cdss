@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment — never commit secrets
+.env
+*.env
+
+# Model files — too large for GitHub (use Git LFS or download script)
+*.pkl
+*.joblib
+*.npy
+
+# Data — too large for GitHub
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.zip
+data/raw/*.gz
+
+# Node
+node_modules/
+frontend/build/
+frontend/.env.local
+
+# Publication figures — binary files (commit to HF via Git LFS)
+publication/figures/*.png
+publication/figures/*.pdf
+results/figures/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
