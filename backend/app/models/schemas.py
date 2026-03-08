@@ -29,6 +29,8 @@ class SHAPFeature(BaseModel):
 
 
 class DiagnosisResult(BaseModel):
+    model_config = {"protected_namespaces": ()}
+
     severity: str
     confidence: float
     shap_features: List[SHAPFeature]
@@ -42,6 +44,8 @@ class DiagnosisResult(BaseModel):
 
 
 class ReportRequest(BaseModel):
+    model_config = {"protected_namespaces": ()}
+
     patient_name: str = ""
     patient_id: str = ""
     timestamp: str = ""
